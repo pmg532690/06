@@ -7,11 +7,14 @@
 void func(void){
 	int x;
 	printf("func x is at %p\n", &x);
-	
+	func2();
 }
 
+void func2(void){
+	int x;
+	printf("func2 x is at %p\n", &x);
 
-
+}
 
 int main(void){
 	int x;
