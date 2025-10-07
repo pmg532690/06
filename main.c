@@ -4,22 +4,20 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 
-
-void printstar(int N)
-{
-		int i;
-		for(i=0;i<N;i++)
-		printf("*");
-		
-}
-		
-		
-int main(int argc, char *argv[]) {
-	int i;
+void func(void){
+	int x;
+	printf("func x is at %p\n", &x);
 	
-	printstar(10);
-	printstar(10);
-	printstar(10);
+}
+
+
+
+
+int main(void){
+	int x;
+	printf("main x is at %p\n", &x);
+	func();
+
 
 	return 0;
 }
